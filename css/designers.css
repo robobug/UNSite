@@ -35,6 +35,7 @@ header h1 {
 .navtitle a:not(.activePage):hover, .navtitle a:focus {
      font-weight:700;
      letter-spacing: 0;
+    /* color: red; */
 }
 
 .navtitle a::after {
@@ -56,6 +57,10 @@ header h1 {
     font-weight:700;
 }
 
+.location {
+    color: rgb(150, 150, 150);
+}
+
 
 /* The main wrapper for everything on the page by default */
 body {
@@ -66,12 +71,6 @@ body {
 /* TARGETED STYLES */
 /* ----------------------------------------------- */
 
-/* The divider is the grey line under the header */
-.divider {
-    border-bottom: 2px solid rgb(0, 0, 0);
-    width: 370px;
-    margin: auto;
-}
 
 /* Wrapper for all items on the page */
 .container {

@@ -1,0 +1,125 @@
+
+
+/* ----------------------------------------------- */
+/* GENERAL SELECTORS */
+/* ----------------------------------------------- */
+
+
+/* The star selector * is a universal selector -- applies to all */
+* {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+  }
+
+/* Makes top row in line */
+  .row {
+      display: inline-block;
+  }
+
+/* The container for the page header and nav */
+header {
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+/* Space under UNS heading */
+header h1 {
+    margin-bottom: 40px;
+} 
+
+/* Logo size */
+.logo {
+    width: 250px;
+    height: 250px;
+}
+
+/* Header alignment */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+  
+/* Makes nav title in a row */
+  .header h1 {
+    position: relative;
+    top: px;
+    left: 100px;
+  }
+
+/* The mouseover properties of the nav titles */
+.navtitle a {
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.navtitle a:not(.activePage):hover, .navtitle a:focus {
+     font-weight:700;
+     letter-spacing: 0;
+}
+
+.navtitle a::after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.activePage {
+    color: rgb(104, 121, 111);
+    font-weight:700;
+}
+
+.activePage:hover {
+    font-weight:700;
+}
+
+/* Image wrapper */
+.mainImg {
+    float: left;
+    margin-left: 50px;
+    width: 500px;
+    Height: 500px;
+}
+
+/* Body flex box */
+.mainItem {
+   display: flex;
+   margin-bottom: 200px;
+   margin-top: 30px;
+}
+
+/* Body words style */
+.words {
+    float: right;
+    text-align: left;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.itemTitle {
+    font-size: 25px;
+}
+
+.itemPrice {
+    font-size: 20px;
+}
+
+.itemTitle span {
+    font-weight: 600;
+}
+
+.itemTitle .green {
+    color:  rgb(104, 121, 111);
+}
+
+.itemPrice {
+    margin-bottom: 80px;
+}

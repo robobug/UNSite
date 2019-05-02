@@ -1,0 +1,71 @@
+
+
+/* ----------------------------------------------- */
+/* GENERAL SELECTORS */
+/* ----------------------------------------------- */
+
+
+/* The star selector * is a universal selector -- applies to all */
+* {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+  }
+
+/* The container for the page header and nav */
+header {
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 40px;
+} 
+
+.logo {
+    width: 250px;
+    height: 250px;
+}
+
+.navtitle a {
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.navtitle a:not(.activePage):hover, .navtitle a:focus {
+     font-weight:700;
+     letter-spacing: 0;
+    /* color: red; */
+}
+
+.navtitle a::after {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+
+}
+
+.activePage {
+    color: rgb(104, 121, 111);
+    font-weight:700;
+}
+
+.activePage:hover {
+    font-weight:700;
+}
+
+/* The main wrapper for everything on the page by default */
+body {
+    text-align: center;
+}
+
+.bodyText {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 300px;
+}
